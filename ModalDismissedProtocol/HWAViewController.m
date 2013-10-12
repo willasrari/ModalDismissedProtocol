@@ -7,23 +7,31 @@
 //
 
 #import "HWAViewController.h"
-
-@interface HWAViewController ()
-
-@end
+#import "HWAModalViewController.h"
 
 @implementation HWAViewController
 
-- (void)viewDidLoad
-{
+@synthesize labelName = _labelName;
+
+- (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (void)didDismissWithObject:(id)object {
+    if (object) {
+        [[self labelName] setText:object];
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"HossModal"]) {
+        HWAModalViewController *controller = (HWAModalViewController *)segue.destinationViewController;
+        [controller setDelegate:self];
+    }
+}
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

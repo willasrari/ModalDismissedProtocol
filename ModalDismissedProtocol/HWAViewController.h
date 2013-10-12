@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HWAModalDismissedProtocol.h"
 
-@interface HWAViewController : UIViewController
+@interface HWAViewController : UIViewController<HWAModalDismissedProtocol>
+
+@property(nonatomic, strong) IBOutlet UILabel *labelName;
 
 @end

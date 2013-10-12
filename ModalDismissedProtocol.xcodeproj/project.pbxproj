@@ -21,6 +21,8 @@
 		525D91941809208600CB7038 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525D91761809208600CB7038 /* UIKit.framework */; };
 		525D919C1809208600CB7038 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 525D919A1809208600CB7038 /* InfoPlist.strings */; };
 		525D919E1809208600CB7038 /* ModalDismissedProtocolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 525D919D1809208600CB7038 /* ModalDismissedProtocolTests.m */; };
+		525D91AC1809246F00CB7038 /* HWAModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525D91AB1809246F00CB7038 /* HWAModalViewController.m */; };
+		525D91AD1809246F00CB7038 /* HWAModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525D91AB1809246F00CB7038 /* HWAModalViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		525D91991809208600CB7038 /* ModalDismissedProtocolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModalDismissedProtocolTests-Info.plist"; sourceTree = "<group>"; };
 		525D919B1809208600CB7038 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		525D919D1809208600CB7038 /* ModalDismissedProtocolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalDismissedProtocolTests.m; sourceTree = "<group>"; };
+		525D91A91809240F00CB7038 /* HWAModalDismissedProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWAModalDismissedProtocol.h; sourceTree = "<group>"; };
+		525D91AA1809246F00CB7038 /* HWAModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HWAModalViewController.h; sourceTree = "<group>"; };
+		525D91AB1809246F00CB7038 /* HWAModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HWAModalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,11 +117,11 @@
 		525D91781809208600CB7038 /* ModalDismissedProtocol */ = {
 			isa = PBXGroup;
 			children = (
+				525D91AE180926A600CB7038 /* Storyboard */,
+				525D91A8180922A900CB7038 /* Protocols */,
+				525D91A71809227000CB7038 /* ViewControllers */,
 				525D91811809208600CB7038 /* HWAAppDelegate.h */,
 				525D91821809208600CB7038 /* HWAAppDelegate.m */,
-				525D91841809208600CB7038 /* Main.storyboard */,
-				525D91871809208600CB7038 /* HWAViewController.h */,
-				525D91881809208600CB7038 /* HWAViewController.m */,
 				525D918A1809208600CB7038 /* Images.xcassets */,
 				525D91791809208600CB7038 /* Supporting Files */,
 			);
@@ -150,6 +155,33 @@
 				525D919A1809208600CB7038 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		525D91A71809227000CB7038 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				525D91871809208600CB7038 /* HWAViewController.h */,
+				525D91881809208600CB7038 /* HWAViewController.m */,
+				525D91AA1809246F00CB7038 /* HWAModalViewController.h */,
+				525D91AB1809246F00CB7038 /* HWAModalViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		525D91A8180922A900CB7038 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				525D91A91809240F00CB7038 /* HWAModalDismissedProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		525D91AE180926A600CB7038 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				525D91841809208600CB7038 /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +285,7 @@
 				525D91891809208600CB7038 /* HWAViewController.m in Sources */,
 				525D917F1809208600CB7038 /* main.m in Sources */,
 				525D91831809208600CB7038 /* HWAAppDelegate.m in Sources */,
+				525D91AC1809246F00CB7038 /* HWAModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525D919E1809208600CB7038 /* ModalDismissedProtocolTests.m in Sources */,
+				525D91AD1809246F00CB7038 /* HWAModalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +416,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ModalDismissedProtocol/ModalDismissedProtocol-Prefix.pch";
 				INFOPLIST_FILE = "ModalDismissedProtocol/ModalDismissedProtocol-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -395,6 +430,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ModalDismissedProtocol/ModalDismissedProtocol-Prefix.pch";
 				INFOPLIST_FILE = "ModalDismissedProtocol/ModalDismissedProtocol-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
