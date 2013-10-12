@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HWAModalDismissedProtocol.h"
 
 @interface HWAModalViewController : UIViewController {
-    id delegate;
+    id<HWAModalDismissedProtocol> delegate;
 }
 
 - (IBAction)doDismissModal:(id)sender;

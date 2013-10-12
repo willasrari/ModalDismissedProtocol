@@ -23,13 +23,15 @@
 }
 
 - (void)viewDidLoad {
+    [[self textField] becomeFirstResponder];
+    
     [super viewDidLoad];
 }
 
 - (IBAction)doDismissModal:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
-        if ([self.delegate respondsToSelector:@selector(didDismissWithObject:)]) {
-            [self.delegate performSelector:@selector(didDismissWithObject:) withObject:self.textField.text];
+        if ([[self delegate] respondsToSelector:@selector(didDismissWithObject:)]) {
+            [[self delegate] performSelector:@selector(didDismissWithObject:) withObject:self.textField.text];
         }
     }];
 }
