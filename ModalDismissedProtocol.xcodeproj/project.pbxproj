@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		525D91731809208600CB7038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525D91721809208600CB7038 /* Foundation.framework */; };
+		525D91751809208600CB7038 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525D91741809208600CB7038 /* CoreGraphics.framework */; };
+		525D91771809208600CB7038 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525D91761809208600CB7038 /* UIKit.framework */; };
+		525D917D1809208600CB7038 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 525D917B1809208600CB7038 /* InfoPlist.strings */; };
+		525D917F1809208600CB7038 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 525D917E1809208600CB7038 /* main.m */; };
+		525D91831809208600CB7038 /* HWAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 525D91821809208600CB7038 /* HWAAppDelegate.m */; };
+		525D91861809208600CB7038 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525D91841809208600CB7038 /* Main.storyboard */; };
+		525D91891809208600CB7038 /* HWAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525D91881809208600CB7038 /* HWAViewController.m */; };
+		525D918B1809208600CB7038 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525D918A1809208600CB7038 /* Images.xcassets */; };
+		525D91921809208600CB7038 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525D91911809208600CB7038 /* XCTest.framework */; };
+		525D91931809208600CB7038 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525D91721809208600CB7038 /* Foundation.framework */; };
+		525D91941809208600CB7038 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525D91761809208600CB7038 /* UIKit.framework */; };
+		525D919C1809208600CB7038 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 525D919A1809208600CB7038 /* InfoPlist.strings */; };
+		525D919E1809208600CB7038 /* ModalDismissedProtocolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 525D919D1809208600CB7038 /* ModalDismissedProtocolTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		525D91951809208600CB7038 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 525D91671809208600CB7038 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 525D916E1809208600CB7038;
+			remoteInfo = ModalDismissedProtocol;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		525D916F1809208600CB7038 /* ModalDismissedProtocol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModalDismissedProtocol.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		525D91721809208600CB7038 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		525D91741809208600CB7038 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		525D91761809208600CB7038 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		525D917A1809208600CB7038 /* ModalDismissedProtocol-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModalDismissedProtocol-Info.plist"; sourceTree = "<group>"; };
+		525D917C1809208600CB7038 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		525D917E1809208600CB7038 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		525D91801809208600CB7038 /* ModalDismissedProtocol-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModalDismissedProtocol-Prefix.pch"; sourceTree = "<group>"; };
+		525D91811809208600CB7038 /* HWAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWAAppDelegate.h; sourceTree = "<group>"; };
+		525D91821809208600CB7038 /* HWAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWAAppDelegate.m; sourceTree = "<group>"; };
+		525D91851809208600CB7038 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		525D91871809208600CB7038 /* HWAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HWAViewController.h; sourceTree = "<group>"; };
+		525D91881809208600CB7038 /* HWAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWAViewController.m; sourceTree = "<group>"; };
+		525D918A1809208600CB7038 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		525D91901809208600CB7038 /* ModalDismissedProtocolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModalDismissedProtocolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		525D91911809208600CB7038 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		525D91991809208600CB7038 /* ModalDismissedProtocolTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ModalDismissedProtocolTests-Info.plist"; sourceTree = "<group>"; };
+		525D919B1809208600CB7038 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		525D919D1809208600CB7038 /* ModalDismissedProtocolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalDismissedProtocolTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		525D916C1809208600CB7038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525D91751809208600CB7038 /* CoreGraphics.framework in Frameworks */,
+				525D91771809208600CB7038 /* UIKit.framework in Frameworks */,
+				525D91731809208600CB7038 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525D918D1809208600CB7038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525D91921809208600CB7038 /* XCTest.framework in Frameworks */,
+				525D91941809208600CB7038 /* UIKit.framework in Frameworks */,
+				525D91931809208600CB7038 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		525D91661809208600CB7038 = {
+			isa = PBXGroup;
+			children = (
+				525D91781809208600CB7038 /* ModalDismissedProtocol */,
+				525D91971809208600CB7038 /* ModalDismissedProtocolTests */,
+				525D91711809208600CB7038 /* Frameworks */,
+				525D91701809208600CB7038 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		525D91701809208600CB7038 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				525D916F1809208600CB7038 /* ModalDismissedProtocol.app */,
+				525D91901809208600CB7038 /* ModalDismissedProtocolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		525D91711809208600CB7038 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				525D91721809208600CB7038 /* Foundation.framework */,
+				525D91741809208600CB7038 /* CoreGraphics.framework */,
+				525D91761809208600CB7038 /* UIKit.framework */,
+				525D91911809208600CB7038 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		525D91781809208600CB7038 /* ModalDismissedProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				525D91811809208600CB7038 /* HWAAppDelegate.h */,
+				525D91821809208600CB7038 /* HWAAppDelegate.m */,
+				525D91841809208600CB7038 /* Main.storyboard */,
+				525D91871809208600CB7038 /* HWAViewController.h */,
+				525D91881809208600CB7038 /* HWAViewController.m */,
+				525D918A1809208600CB7038 /* Images.xcassets */,
+				525D91791809208600CB7038 /* Supporting Files */,
+			);
+			path = ModalDismissedProtocol;
+			sourceTree = "<group>";
+		};
+		525D91791809208600CB7038 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				525D917A1809208600CB7038 /* ModalDismissedProtocol-Info.plist */,
+				525D917B1809208600CB7038 /* InfoPlist.strings */,
+				525D917E1809208600CB7038 /* main.m */,
+				525D91801809208600CB7038 /* ModalDismissedProtocol-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		525D91971809208600CB7038 /* ModalDismissedProtocolTests */ = {
+			isa = PBXGroup;
+			children = (
+				525D919D1809208600CB7038 /* ModalDismissedProtocolTests.m */,
+				525D91981809208600CB7038 /* Supporting Files */,
+			);
+			path = ModalDismissedProtocolTests;
+			sourceTree = "<group>";
+		};
+		525D91981809208600CB7038 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				525D91991809208600CB7038 /* ModalDismissedProtocolTests-Info.plist */,
+				525D919A1809208600CB7038 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		525D916E1809208600CB7038 /* ModalDismissedProtocol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525D91A11809208600CB7038 /* Build configuration list for PBXNativeTarget "ModalDismissedProtocol" */;
+			buildPhases = (
+				525D916B1809208600CB7038 /* Sources */,
+				525D916C1809208600CB7038 /* Frameworks */,
+				525D916D1809208600CB7038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModalDismissedProtocol;
+			productName = ModalDismissedProtocol;
+			productReference = 525D916F1809208600CB7038 /* ModalDismissedProtocol.app */;
+			productType = "com.apple.product-type.application";
+		};
+		525D918F1809208600CB7038 /* ModalDismissedProtocolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 525D91A41809208600CB7038 /* Build configuration list for PBXNativeTarget "ModalDismissedProtocolTests" */;
+			buildPhases = (
+				525D918C1809208600CB7038 /* Sources */,
+				525D918D1809208600CB7038 /* Frameworks */,
+				525D918E1809208600CB7038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				525D91961809208600CB7038 /* PBXTargetDependency */,
+			);
+			name = ModalDismissedProtocolTests;
+			productName = ModalDismissedProtocolTests;
+			productReference = 525D91901809208600CB7038 /* ModalDismissedProtocolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		525D91671809208600CB7038 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HWA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Will Asrari";
+				TargetAttributes = {
+					525D918F1809208600CB7038 = {
+						TestTargetID = 525D916E1809208600CB7038;
+					};
+				};
+			};
+			buildConfigurationList = 525D916A1809208600CB7038 /* Build configuration list for PBXProject "ModalDismissedProtocol" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 525D91661809208600CB7038;
+			productRefGroup = 525D91701809208600CB7038 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				525D916E1809208600CB7038 /* ModalDismissedProtocol */,
+				525D918F1809208600CB7038 /* ModalDismissedProtocolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		525D916D1809208600CB7038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525D918B1809208600CB7038 /* Images.xcassets in Resources */,
+				525D917D1809208600CB7038 /* InfoPlist.strings in Resources */,
+				525D91861809208600CB7038 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525D918E1809208600CB7038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525D919C1809208600CB7038 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		525D916B1809208600CB7038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525D91891809208600CB7038 /* HWAViewController.m in Sources */,
+				525D917F1809208600CB7038 /* main.m in Sources */,
+				525D91831809208600CB7038 /* HWAAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		525D918C1809208600CB7038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525D919E1809208600CB7038 /* ModalDismissedProtocolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		525D91961809208600CB7038 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 525D916E1809208600CB7038 /* ModalDismissedProtocol */;
+			targetProxy = 525D91951809208600CB7038 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		525D917B1809208600CB7038 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525D917C1809208600CB7038 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		525D91841809208600CB7038 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525D91851809208600CB7038 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		525D919A1809208600CB7038 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				525D919B1809208600CB7038 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		525D919F1809208600CB7038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		525D91A01809208600CB7038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		525D91A21809208600CB7038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ModalDismissedProtocol/ModalDismissedProtocol-Prefix.pch";
+				INFOPLIST_FILE = "ModalDismissedProtocol/ModalDismissedProtocol-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		525D91A31809208600CB7038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ModalDismissedProtocol/ModalDismissedProtocol-Prefix.pch";
+				INFOPLIST_FILE = "ModalDismissedProtocol/ModalDismissedProtocol-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		525D91A51809208600CB7038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ModalDismissedProtocol.app/ModalDismissedProtocol";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ModalDismissedProtocol/ModalDismissedProtocol-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ModalDismissedProtocolTests/ModalDismissedProtocolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		525D91A61809208600CB7038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ModalDismissedProtocol.app/ModalDismissedProtocol";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ModalDismissedProtocol/ModalDismissedProtocol-Prefix.pch";
+				INFOPLIST_FILE = "ModalDismissedProtocolTests/ModalDismissedProtocolTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		525D916A1809208600CB7038 /* Build configuration list for PBXProject "ModalDismissedProtocol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525D919F1809208600CB7038 /* Debug */,
+				525D91A01809208600CB7038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		525D91A11809208600CB7038 /* Build configuration list for PBXNativeTarget "ModalDismissedProtocol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525D91A21809208600CB7038 /* Debug */,
+				525D91A31809208600CB7038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		525D91A41809208600CB7038 /* Build configuration list for PBXNativeTarget "ModalDismissedProtocolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				525D91A51809208600CB7038 /* Debug */,
+				525D91A61809208600CB7038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 525D91671809208600CB7038 /* Project object */;
+}
