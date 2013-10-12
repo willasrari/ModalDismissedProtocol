@@ -13,15 +13,6 @@
 @synthesize textField = _textField;
 @synthesize delegate = _delegate;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    
-    if (self) {
-    }
-    
-    return self;
-}
-
 - (void)viewDidLoad {
     [[self textField] becomeFirstResponder];
     

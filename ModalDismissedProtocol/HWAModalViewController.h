@@ -9,13 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "HWAModalDismissedProtocol.h"
 
-@interface HWAModalViewController : UIViewController {
-    id<HWAModalDismissedProtocol> delegate;
-}
+@interface HWAModalViewController : UIViewController
 
 - (IBAction)doDismissModal:(id)sender;
 
-@property(nonatomic, weak) id delegate;
+@property(nonatomic, weak) id<HWAModalDismissedProtocol> delegate;
 @property(nonatomic, strong) IBOutlet UITextField *textField;
 
 @end
