@@ -22,7 +22,7 @@
 - (IBAction)doDismissModal:(id)sender {
     [self dismissViewControllerAnimated:YES completion:^{
         if ([[self delegate] respondsToSelector:@selector(didDismissWithObject:)]) {
-            [[self delegate] performSelector:@selector(didDismissWithObject:) withObject:self.textField.text];
+            [[self delegate] performSelector:@selector(didDismissWithObject:) withObject:[self.textField text]];
         }
     }];
 }
